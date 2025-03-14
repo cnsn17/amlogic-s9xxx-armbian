@@ -1,0 +1,21 @@
+From e183e932d4598795d1141fd5f90419005303f26a Mon Sep 17 00:00:00 2001
+From: cnsn17 <73534394+cnsn17@users.noreply.github.com>
+Date: Sat, 15 Mar 2025 04:36:30 +0800
+Subject: [PATCH] Update qmi_wwan.c
+
+---
+ drivers/net/usb/qmi_wwan.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/net/usb/qmi_wwan.c b/drivers/net/usb/qmi_wwan.c
+index ced60b6af..feff2c4b2 100644
+--- a/drivers/net/usb/qmi_wwan.c
++++ b/drivers/net/usb/qmi_wwan.c
+@@ -1097,6 +1097,7 @@ static const struct usb_device_id products[] = {
+ 	{QMI_MATCH_FF_FF_FF(0x05c6, 0xf601)},	/* MeigLink SLM750 */
+ 
+ 	/* 3. Combined interface devices matching on interface number */
++	{QMI_FIXED_INTF(0x1c9e, 0x9b05, 4)},	
+ 	{QMI_FIXED_INTF(0x0408, 0xea42, 4)},	/* Yota / Megafon M100-1 */
+ 	{QMI_FIXED_INTF(0x05c6, 0x6001, 3)},	/* 4G LTE usb-modem U901 */
+ 	{QMI_FIXED_INTF(0x05c6, 0x7000, 0)},

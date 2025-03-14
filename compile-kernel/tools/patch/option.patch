@@ -1,0 +1,23 @@
+From 43c9cce908d83724127256ae29f2dba9ae862db4 Mon Sep 17 00:00:00 2001
+From: cnsn17 <73534394+cnsn17@users.noreply.github.com>
+Date: Sat, 15 Mar 2025 04:35:18 +0800
+Subject: [PATCH] Update option.c
+
+---
+ drivers/usb/serial/option.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/drivers/usb/serial/option.c b/drivers/usb/serial/option.c
+index b584113e1..b720dfac1 100644
+--- a/drivers/usb/serial/option.c
++++ b/drivers/usb/serial/option.c
+@@ -2124,8 +2124,7 @@ static const struct usb_device_id option_ids[] = {
+ 	  .driver_info = RSVD(3) },
+ 	{ USB_DEVICE_INTERFACE_CLASS(LONGCHEER_VENDOR_ID, 0x9803, 0xff),
+ 	  .driver_info = RSVD(4) },
+-	{ USB_DEVICE(LONGCHEER_VENDOR_ID, 0x9b05),	/* Longsung U8300 */
+-	  .driver_info = RSVD(4) | RSVD(5) },
++	{ USB_DEVICE(LONGCHEER_VENDOR_ID, 0x9b05) },    /* Longsung U8300 */
+ 	{ USB_DEVICE(LONGCHEER_VENDOR_ID, 0x9b3c),	/* Longsung U9300 */
+ 	  .driver_info = RSVD(0) | RSVD(4) },
+ 	{ USB_DEVICE(LONGCHEER_VENDOR_ID, ZOOM_PRODUCT_4597) },
